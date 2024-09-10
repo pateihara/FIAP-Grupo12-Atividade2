@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(35deg, #1E2022, #0A0A0A);
+    background-size: contain;
+    background-position: center;
+    color:#fff
+}
+.header{
+    width: 100%;
+    height: 10rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.header ul{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav{
+    padding: 2rem;
+    z-index: 1;
+}
+nav a{
+    text-decoration: dotted;
+    color: #75838B;
+    font-weight: 300;
+    font-size: 2rem;
+}
+nav a.active {
+    color: #EA145A; /* Destaque do link ativo */
+    font-weight: bold;
+}
+nav a:hover{
+    color:white;
+}
+nav ul{
+    list-style: none;
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item-main{
+    text-align: right;
+}
+.item-main-h1{
+    font-size: 10rem;
+}
+.item-main-h2{
+    font-size: 4rem;
+    font-weight: 400;
+    background-color: #EA145A;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.item-main-p{
+    font-size: 3rem;
+    font-weight: 300;
+    padding: 1rem;
+}
+hr {
+    width: 50%; 
+    margin: 0 auto; 
+    border: 1px solid rgba(144, 144, 144, 0.1);
+}
+.students{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.studentPhoto{
+    width: 100%;
+    border-radius: 2rem 2rem 0px 0px;
+}
+.studentCard{
+    width: 40rem;
+    background-color: rgba(144, 144, 144, 0.1);
+    border-radius: 2rem;
+    margin: 2rem;    
+}
+.studentInfo{
+    padding: 0.3rem;
+    margin: 1rem;
+}
+.button-link{
+    margin: 1rem 0rem;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    padding: 1.2rem 1rem;
+    width: 100%;
+    height: 5rem;
+    background-color: #EA145A;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+.button-link:hover {
+    background-color: transparent;
+    border: 2px solid #EA145A;
+    color: #EA145A;
+}
+.back-button{
+    margin: 4rem 0rem;
+    font-size: 2rem;
+    font-weight:500;
+    display:inline-block;
+    padding: 3px 3px;
+    width: 30%;
+    height: 3.5rem;
+    background-color: #EA145A;
+    color: #fff;
+    text-align: match-parent;
+    text-decoration: none;
+    border-radius: 1rem;
+    transition: background-color 0.3s ease;
+}
+.back-button:hover {
+    background-color: transparent;
+    border: 2px solid #EA145A;
+    color: #EA145A;
+}
+.contact-button{
+    margin: 0rem 0rem;
+    font-size: 2.2rem;
+    font-weight:400rem;
+    display: inline;
+    padding: 0px 0px;
+    width:100%;
+    height: 5rem;
+    background-color: none;
+    color: #ffffff;
+    text-align: left;
+    text-decoration: none;
+    border-radius: 0rem;
+    transition: background-color 0.3s ease;
+}
+.contact-button:hover {
+    background-color: transparent;
+    border: 0px solid #EA145A;
+    color: #EA145A;
+}
+.containerBio{
+    margin: 4rem;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 1rem;
+}
+.containerPhoto{
+    display: flex;
+    justify-content: center;
+}
+.photoBio{
+    width: 100%; /* Garante que a imagem se ajuste ao grid */
+    max-width: 400px; /* Limita a largura máxima da imagem */
+    margin: 0 auto; /* Centraliza a imagem */
+    border-radius: 2rem;
+}
+.item-bio{
+    padding: 4rem;
+}
+.item-bio-h1{
+    font-size: 4rem;
+}
+.item-bio-p{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 4rem;
+}
+.moreInfo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 4rem;    
+}
+.moreInfo-item{
+    padding:4rem;
+    width: 400px;
+}
+.moreInfo-h2{
+    font-size: 3rem;
+    padding-bottom:2rem;
+}
+.moreInfo-ul{
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.moreInfo-ul-contact{
+    font-size: 2.75rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: none;
+    list-style-type: none;
+    line-height: 5rem;
+}
+.moreInfo-ul-contact:visited{
+    color: #fff;
+}
+.fa-brands{
+    padding-right: 1rem;
+}
+footer{
+    background-color:#0A0A0A;
+    width: 100%;
+    height: 25rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
