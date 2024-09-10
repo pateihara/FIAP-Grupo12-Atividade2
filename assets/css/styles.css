@@ -249,4 +249,6 @@ a:focus {
  button:focus {
     outline: 3px solid #fff;
 }
-
+.body-dyslexic {
+    font-family: 'OpenDyslexic', sans-serif;
+}
