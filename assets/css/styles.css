@@ -35,9 +35,13 @@ nav{
 }
 nav a{
     text-decoration: dotted;
-    color: #75838B;
+    color: #d0d0d0;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 24px;
+}
+a{
+    text-decoration: dotted;
+    color: #fff;
 }
 nav a.active {
     color: #EA145A; /* Destaque do link ativo */
@@ -45,6 +49,7 @@ nav a.active {
 }
 nav a:hover{
     color:white;
+    font-weight: 800;
 }
 nav ul{
     list-style: none;
@@ -103,9 +108,9 @@ hr {
     padding: 0.3rem;
     margin: 1rem;
 }
-.button-link{
+button{
     margin: 1rem 0rem;
-    font-size: 2rem;
+    font-size: 24px;
     font-weight: 300;
     display: flex;
     padding: 1.2rem 1rem;
@@ -118,15 +123,16 @@ hr {
     text-decoration: none;
     border-radius: 1rem;
     transition: background-color 0.3s ease;
+    border: none;
 }
-.button-link:hover {
+button:hover {
     background-color: transparent;
     border: 2px solid #EA145A;
     color: #EA145A;
 }
-.back-button{
+/* .back-button{
     margin: 4rem 0rem;
-    font-size: 2rem;
+    font-size: 24px;
     font-weight:500;
     display:inline-block;
     padding: 3px 3px;
@@ -143,10 +149,10 @@ hr {
     background-color: transparent;
     border: 2px solid #EA145A;
     color: #EA145A;
-}
+} */
 .contact-button{
     margin: 0rem 0rem;
-    font-size: 2.2rem;
+    font-size: 24px;
     font-weight:400rem;
     display: inline;
     padding: 0px 0px;
@@ -236,3 +242,11 @@ footer{
     text-align: center;
     font-size: 2rem;
 }
+
+a:focus {
+    outline: 3px solid #EA145A;
+}
+ button:focus {
+    outline: 3px solid #fff;
+}
+
