@@ -33,6 +33,7 @@ body{
 nav{
     padding: 2rem;
     z-index: 1;
+    margin-right: 20rem;
 }
 nav a{
     text-decoration: dotted;
@@ -243,7 +244,6 @@ footer{
     text-align: center;
     font-size: 2rem;
 }
-
 a:focus {
     outline: 3px solid #EA145A;
 }
@@ -253,10 +253,12 @@ a:focus {
 .body-dyslexic {
     font-family: 'OpenDyslexic', sans-serif;
 }
-
 .buttonCircle {
-    width: 100px; /* Largura do botão */
-    height: 100px; /* Altura igual à largura para formar o círculo */
+    position: fixed; /* Mantém o botão fixo na posição especificada */
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da borda direita da página */
+    width: 200px; /* Largura do botão */
+    height: 50px; /* Altura igual à largura para formar o círculo */
     background-color: #EA145A; /* Cor de fundo */
     color: white; /* Cor do texto */
     border: none; /* Remove borda */
@@ -267,7 +269,14 @@ a:focus {
     cursor: pointer;
     transition: background-color 0.3s ease; /* Efeito suave na troca de cor */
 }
-
 .buttonCircle:hover {
     background-color: #333; /* Muda a cor de fundo ao passar o mouse */
+}
+@media (max-width: 1300px) {
+    nav {
+        margin-right: 0rem;
+    }
+    main{
+        margin-top: 15rem;
+    }
 }
