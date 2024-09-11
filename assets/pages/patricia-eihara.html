@@ -21,7 +21,7 @@
     <title>Patricia Sayuri Eihara - Desenvolvedora</title>
 
     <link rel="stylesheet" href="../css/styles.css">
-
+    <link rel="stylesheet" href="../css/font.css">
 </head>
 
 <body>
@@ -38,6 +38,7 @@
                 <li><a href="../pages/sarah-cristina.html">Sarah Negrão</a></li>
             </ul>
         </nav>
+        <button id="toggleFont" class="buttonCircle">Ativar fonte para dislexia</button>
     </header>
     <!-- fim header -->
 
@@ -46,7 +47,7 @@
         <section class="containerBio">
             <div class="containerPhoto">
                 <img class="photoBio" src="../images/P_20190903_193354_p.jpg"
-                    alt="Foto da Patricia, uma mulher asiática de cabelos lisos, pretos e com mexas verdes, utiliza óculos grandes de grau e armação roxa. Está com blusa vermelha e fundo branco.">
+                    alt="Patricia Eihara, profissional de UX/UI e desenvolvedora Salesforce, com cabelo preto liso e mechas verdes. Ela está usando óculos grandes e uma blusa vermelha.">
             </div>
             <div class="item-bio">
                 <h1 class="item-bio-h1">Patricia Eihara</h1>
@@ -128,16 +129,17 @@
         </div>
     </footer>
 
-    <div vw class="enabled"></div>
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-    </div>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
