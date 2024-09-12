@@ -267,40 +267,28 @@ a:focus {
     font-family: 'OpenDyslexic', sans-serif;
 }
 .buttonCircle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 200px; 
-    height: 50px; 
     background-color: #EA145A; 
     color: white;
     border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
     cursor: pointer;
     transition: background-color 0.3s ease; 
+    font-size: 24px;
 }
 .buttonCircle:hover {
-    background-color: #333; 
+    border: 1px solid #EA145A;
 }
 
 @media (max-width: 1300px) {
     nav {
         margin-right: 0rem;
-        position: fixed;
         top: 100px;
     }
     main{
         margin-top: 15rem;
     }
-    buttonCircle{
-        position: fixed;
-        top: 20px;
-        right: 20px;
-    }
+
     .logoFiap{
         width: 100px;
+        
     }
 }

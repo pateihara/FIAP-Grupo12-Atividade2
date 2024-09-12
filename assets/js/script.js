@@ -7,11 +7,3 @@ document.getElementById("toggleFont").addEventListener("click", function () {
     this.textContent = "Ativar fonte para dislexia";
   }
 });
-
-function clickMenu() {
-  if (menu.style.display == "block") {
-    menu.style.display = "none";
-  } else {
-    menu.style.display = "block";
-  }
-}
