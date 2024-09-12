@@ -30,6 +30,19 @@ body{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+i#burguer{
+    background-color: #0A0A0A;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover{
+    background-color: white;
+    color:black;
+}
 nav{
     padding: 2rem;
     z-index: 1;
@@ -254,29 +267,40 @@ a:focus {
     font-family: 'OpenDyslexic', sans-serif;
 }
 .buttonCircle {
-    position: fixed; /* Mantém o botão fixo na posição especificada */
-    top: 20px; /* Distância do topo da página */
-    right: 20px; /* Distância da borda direita da página */
-    width: 200px; /* Largura do botão */
-    height: 50px; /* Altura igual à largura para formar o círculo */
-    background-color: #EA145A; /* Cor de fundo */
-    color: white; /* Cor do texto */
-    border: none; /* Remove borda */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px; 
+    height: 50px; 
+    background-color: #EA145A; 
+    color: white;
+    border: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px; /* Tamanho do texto */
+    font-size: 18px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito suave na troca de cor */
+    transition: background-color 0.3s ease; 
 }
 .buttonCircle:hover {
-    background-color: #333; /* Muda a cor de fundo ao passar o mouse */
+    background-color: #333; 
 }
+
 @media (max-width: 1300px) {
     nav {
         margin-right: 0rem;
+        position: fixed;
+        top: 100px;
     }
     main{
         margin-top: 15rem;
+    }
+    buttonCircle{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+    }
+    .logoFiap{
+        width: 100px;
     }
 }
